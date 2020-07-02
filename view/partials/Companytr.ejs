@@ -1,0 +1,10 @@
+<tr id="<%=company._id%>" onclick="employee(this.id)">
+    <th scope="row"><%=number%></th>
+    <td><%=company.name%></td>
+    <td><%=company.city%></td>
+    <td><%=company.state%></td>
+    <td><%=company.phoneNumber%></td>
+    <td><%=company.regDate%></td>
+    <td><%=company.regNumber%></td>
+    <td><button type="button" class="btn btn-success" style="margin-right: 10px;" id="E<%=company.id%>" onclick="openE(this.id)">edit</button><button type="button" class="btn btn-danger" id="D<%=company.id%>" onclick="del(this.id)">delete</button></td>
+</tr>

@@ -1,0 +1,20 @@
+.container {
+    align-content: center;
+    height: 100%;
+    position: fixed;
+    top: 50% ;
+    left: 50% ;
+    margin: -200px 0 0 -250px;
+    display: none;
+}
+
+.card {
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 30px;
+    border-radius: 30px;
+    color: white;
+}
