@@ -1,0 +1,20 @@
+<tr>
+    <th scope="row"><%=number%></th>
+    <td><%=employee.firstName%></td>
+    <td><%=employee.lastName%></td>
+    <td><%=employee.birthDate%></td>
+    <td><%=employee.nationalCode%></td>
+    <td><% if(employee.manager === true){ %>
+        manager
+      <% } else{ %>  
+        employee
+     <% } %>
+    </td>
+    <td><% if(employee.male === true){ %>
+        male
+      <% } else{ %>  
+        female
+     <% } %>
+    </td>
+    <td><button type="button" class="btn btn-success " style="margin-right: 10px;" id="E<%=employee.id%>" onclick="openE(this.id)">edit</button><button type="button" class="btn btn-danger " id="D<%=employee.id%>" onclick="del(this.id)">delete</button></td>
+</tr>
