@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="card">
+
+        <div>First Name: <input type="text" id="firstName" style="float: right;"></div>
+        <div>Last Name: <input type="text" id="lastName" style="float: right;"></div>
+        <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">Birth Date:
+            <%- include('../partials/datepicker') -%></div>
+        <!-- add datePicker -->
+        <div>Natioal code: <input type="text" id="nationalCode" style="float: right;"></div>
+        <!-- add checkbox -->
+        <div>Role: <div class="form-check form-check-inline">
+            <input class="form-check-input" style="margin-left: 21.5px;" type="checkbox" id="manager" value="option1" onclick="checkedd(this.id)">
+            <label class="form-check-label" for="inlineCheckbox1" >Manager</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="employee" value="option2" onclick="checkedd(this.id)">
+            <label class="form-check-label" for="inlineCheckbox2">Employee</label>
+          </div>
+        <!-- add checkbox -->
+        <div>
+        <div>Gender: <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="male" value="option1" onclick="checkedd(this.id)">
+            <label class="form-check-label" for="inlineCheckbox1">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="female" value="option2" style=" margin-left: 29px;" onclick="checkedd(this.id)">
+            <label class="form-check-label" for="inlineCheckbox2">Female</label>
+          </div>
+        <div>
+            <button type="button" class="btn btn-warning" style="margin-right: 138px;  margin-top: 26px; float: left;"
+                onclick="cancel()">Cancel</button>
+            <button type="button" class="btn btn-success apply" id="apply" style="margin-left: 40px; margin-top: 26px; float: left;"
+                onclick="sendAdd()">Apply</button>
+            <button type="button" class="btn btn-primary apply special" id="edit" style="margin-left: 40px; margin-top: 26px; float: left;" onclick="edit(this.id)">
+               Edit </button>
+        </div>
+    </div>
+</div>

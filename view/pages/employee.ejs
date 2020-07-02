@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') -%>
+    <link rel="stylesheet" href="http://localhost:3000/style.css">
+</head>
+<body>
+    <script src="http://localhost:3000/jquery-3.4.1.js"></script>
+    <%- include('../partials/navbar', {thing: "add employee", id: id}) -%>
+    <br>
+    <center><h1><%=companyName%></h1></center>
+    <br>
+    <br>
+    <%- include('../partials/employeeTable', {employees: employees}) -%>
+
+    <%- include('../partials/externalJs') -%>
+    <%- include('../partials/addAndEditCardE') -%>
+
+    <script src="http://localhost:3000/employee.js"></script>
+</body>
+</html>
