@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') -%>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="jquery-3.4.1.js"></script>
+    <%- include('../partials/navbar',{thing: "add company", id: '12234'}) -%>
+    <br>
+    
+    <div  class="input-group date" data-date-format="mm-dd-yyyy" style="position: relative; left: 300px;" id="DP1">From:
+        
+
+    <input  type="text" readonly  id="from" style="position: relative; top: 0px; left: 79px;" id="from"/>
+    <span class="input-group-addon"><i  class="glyphicon glyphicon-calendar"></i></span>
+
+</div>
+        
+    <div  class="input-group date" data-date-format="mm-dd-yyyy" style="position: relative; left: 800px ;top: -30px" id="DP2"  >To:
+            
+
+    <input  type="text" readonly  id="to" style="position: relative; top: 0px; left: 79px;" id="to"/>
+    <span class="input-group-addon"><i  class="glyphicon glyphicon-calendar"></i></span>
+
+</div>
+            <img src="search.png" width="50" alt="" style="position: relative;left: 700px; top: -40px" onclick="search()">
+    <br>
+    <%- include('../partials/Companytable', {companies: companies}) -%>
+    <%- include('../partials/externalJs') -%>
+    <%- include('../partials/addAndEditCardC') -%>
+    <script src="company.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card">
+        <div>Name: <input type="text" name="" id="name" style="float: right;" ></div>
+        <div>City: <input type="text" id="city" style="float: right;" ></div>
+        <div>State: <input type="text" id="state" style="float: right;" ></div>
+        <div>Phone number: <input type="text" id="phoneNumber" style="float: right;" ></div>
+        <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">Registration date:
+            <%- include('../partials/datepickerC') -%></div>
+        <div>Registration number: <input type="text" id="regNumber" style="float: right;" ></div>
+        <div>
+            <button type="button" class="btn btn-warning" style="margin-right: 138px;  margin-top: 26px; float: left;"
+                onclick="cancel()">Cancel</button>
+            <button type="button" class="btn btn-success apply" id="apply" style="margin-left: 40px; margin-top: 26px; float: left;"
+                onclick="sendAdd()">Apply</button>
+            <button type="button" class="btn btn-primary apply special" id="edit" style="margin-left: 40px; margin-top: 26px; float: left;" onclick="edit(this.id)">
+               Edit </button>
+        </div>
+    </div>
+</div>

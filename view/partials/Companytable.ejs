@@ -1,0 +1,19 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+        <th scope="col">Phone number</th>
+        <th scope="col">Registration date</th>
+        <th scope="col">Registration number</th>
+        <th scope="col">Tools</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% for(let i = 0; i < companies.length; i++){ %>
+      <%- include('../partials/Companytr',{company: companies[i], number: i+1 }) %>
+    <%}%>
+    </tbody>
+  </table>
